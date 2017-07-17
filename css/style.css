@@ -55,5 +55,11 @@
   #hero .bg-black {
     height: 575px;
     text-align: center; } }
+header nav {
+  margin: 20px; }
+header .nav-pills > li.active > a,
+header .nav-pills > li.active > a:focus,
+header .nav-pills > li.active > a:hover {
+  background-color: #5ed2fb !important; }
 
 /*# sourceMappingURL=style.css.map */

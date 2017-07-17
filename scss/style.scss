@@ -59,7 +59,7 @@ $primary-color:#fb875e;
     }
     .btn-conoceme:hover {
         background-color: $white;
-        color: $primary-color;        
+        color: $primary-color;
     }
 }
 
@@ -69,5 +69,16 @@ $primary-color:#fb875e;
             height: 575px;
             text-align: center;
         }
+    }
+}
+
+header {
+    nav {
+        margin: 20px;
+    }
+    .nav-pills>li.active>a,
+    .nav-pills>li.active>a:focus,
+    .nav-pills>li.active>a:hover {
+        background-color: #5ed2fb !important;
     }
 }
