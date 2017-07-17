@@ -1,0 +1,73 @@
+$white: #ffffff;
+$primary-color:#fb875e;
+.fresca {
+    font-family: 'Fresca', sans-serif;
+}
+
+.pacifico {
+    font-family: 'Pacifico', cursive;
+}
+
+.noto {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.scrolltop {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #cdcdcd;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 6px;
+}
+
+.scrolltop:hover,
+.scrolltop:active,
+.scrolltop:focus {
+    color: $white !important;
+    opacity: .75;
+}
+
+#hero {
+    background-image: url(../assets/img/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid $primary-color;
+    .bg-black {
+        background-color: rgba(0, 0, 0, 0.20);
+        height: 650px;
+        color: #fff;
+        padding-top: 20px;
+        text-align: right;
+        h1 {
+            font-size: 6.5rem;
+        }
+    }
+    .btn-conoceme {
+        background-color: $primary-color;
+        color: $white;
+        font-size: 4rem;
+        border-radius: 10px;
+        padding: 15px 50px;
+        margin-top: 12%;
+    }
+    .btn-conoceme:hover {
+        background-color: $white;
+        color: $primary-color;        
+    }
+}
+
+@media (max-width: 767px) {
+    #hero {
+        .bg-black {
+            height: 575px;
+            text-align: center;
+        }
+    }
+}
