@@ -38,7 +38,6 @@ $primary-color:#fb875e;
     background-image: url(../assets/img/cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom: 3px solid $primary-color;
     .bg-black {
         background-color: rgba(0, 0, 0, 0.20);
         height: 650px;
@@ -73,8 +72,13 @@ $primary-color:#fb875e;
 }
 
 header {
+    /*box-shadow: 0 1px 1px 0 rgba(140, 140, 140, .15);*/
+    border-top: 3px solid $primary-color;
     nav {
         margin: 20px;
+        .logo {
+            font-size: 25px;
+        }
     }
     .nav-pills>li.active>a,
     .nav-pills>li.active>a:focus,

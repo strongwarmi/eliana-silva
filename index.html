@@ -22,36 +22,41 @@
             </div>
         </div>
     </section>
-    <header>
-        <div class="container">
+    <header id="header" class="menu">
+       
             <nav class="navbar">
-                <div id="logo" class="navbar-left">
-                    <a href="#hero">
-                        <p>Eliana Silva</p>
-                    </a>
+                <div class="navbar-left pacifico logo">
+                    <p>Eliana Silva</p>
                 </div>
-                <ul class="nav nav-pills noto navbar-right">
+                <ul class="nav nav-pills noto navbar-right hidden-xs">
                     <li class="tab active"><a href="#about-me" data-toggle="tab">SOBRE MI</a></li>
                     <li class="tab"><a href="#portfolio" data-toggle="tab">PORTAFOLIO</a></li>
                     <li class="tab"><a href="#contact" data-toggle="tab">CONTACTO</a></li>
                     <li class="tab"><a href="#cv" data-toggle="tab">DESCARGA MI CV</a></li>
                 </ul>
             </nav>
-        </div>
+        
 
     </header>
-    <section id="about-me">
-        <div class="container">
-            <div class="page-header">
-                <h1 class="pacifico">Sobre mi</h1>
-            </div>
-            <div class="row">
-                <p class="noto">Egresada de Laboratoria Perú, muy interesada en desempeñarme como UI designer y a un corto plazo convertirme en Front-End developer. Me apasiona trabajar en la mejora de interfaces de usuario de aplicaciones informáticas. Cuento con 6 años de experiencia en el área de sistemas así mismo en estos últimos 6 meses me he enfocado en adquirir nuevos conocimientos y habilidades para el desarrollo de aplicativos web.</p>
-            </div>
+    <main class="tab-content">
+        <section id="about-me" class="tab-pane active">
+            <div class="container">
+                <div class="page-header">
+                    <h1 class="pacifico">Sobre mi</h1>
+                </div>
+                <div class="row">
+                    <p class="noto">Egresada de Laboratoria Perú, muy interesada en desempeñarme como UI designer y a un corto plazo convertirme en Front-End developer. Me apasiona trabajar en la mejora de interfaces de usuario de aplicaciones informáticas. Cuento con 6 años de experiencia en el área de sistemas así mismo en estos últimos 6 meses me he enfocado en adquirir nuevos conocimientos y habilidades para el desarrollo de aplicativos web.</p>
 
-        </div>
-
-    </section>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="tab-pane">
+            proyectos
+        </section>
+        <section id="contact" class="tab-pane">
+            message
+        </section>
+    </main>
     <footer>
         <div class="container">
             <p>© Eliana Silva</p>
@@ -59,9 +64,11 @@
     </footer>
     <a class="scrolltop" href="#" style="display: block;"><i class="glyphicon glyphicon-chevron-up"></i></a>
 
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script src="js/app.js"></script>
 
 
 </body>
