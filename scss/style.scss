@@ -51,10 +51,11 @@ $primary-color:#fb875e;
     .btn-conoceme {
         background-color: $primary-color;
         color: $white;
-        font-size: 4rem;
-        border-radius: 10px;
+        font-size: 3rem;
+        border-radius: 50px;
         padding: 15px 50px;
         margin-top: 12%;
+        transition: all .2s ease-in-out;
     }
     .btn-conoceme:hover {
         background-color: $white;

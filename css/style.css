@@ -42,10 +42,11 @@
   #hero .btn-conoceme {
     background-color: #fb875e;
     color: #ffffff;
-    font-size: 4rem;
-    border-radius: 10px;
+    font-size: 3rem;
+    border-radius: 50px;
     padding: 15px 50px;
-    margin-top: 12%; }
+    margin-top: 12%;
+    transition: all .2s ease-in-out; }
   #hero .btn-conoceme:hover {
     background-color: #ffffff;
     color: #fb875e; }
