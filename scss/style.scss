@@ -1,5 +1,8 @@
 $white: #ffffff;
 $primary-color:#fb875e;
+body{
+  font-size: 16px;
+}
 .fresca {
     font-family: 'Fresca', sans-serif;
 }
@@ -38,6 +41,8 @@ $primary-color:#fb875e;
     background-image: url(../assets/img/cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    // background-position: 30% 30%;
+    background-attachment: fixed;
     .bg-black {
         background-color: rgba(0, 0, 0, 0.20);
         height: 650px;
