@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ELiana Silva | UI Designer</title>
+    <title>ELiana Silva | UI Developer</title>
     <link href="https://fonts.googleapis.com/css?family=Fresca|Noto+Sans|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,50 +14,53 @@
 <body>
     <section id="hero">
         <div class="bg-black">
-            <div class="container fresca">
-                <h1>Hola, mi nombre es Eliana Silva </h1>
-                <h1> y soy UI Designer</h1>
+            <div class="container noto">
+                <h1>Hola, mi nombre es <span class="pacifico">Eliana Silva</span> </h1>
+                <h1> y soy UI Developer</h1>
                 <a class="btn btn-conoceme" href="#header" role="button">CONÓCEME</a>
             </div>
         </div>
     </section>
     <header id="header" class="menu">
-            <nav class="navbar">
-                <div class="navbar-left pacifico logo">
-                    <img src="assets/img/logo.png" width="60" alt="">
-                </div>
-                <ul class="nav nav-pills noto navbar-right hidden-xs">
-                    <li class="tab active"><a href="#about-me" data-toggle="tab">SOBRE MI</a></li>
-                    <li class="tab"><a href="#portfolio" data-toggle="tab">PORTAFOLIO</a></li>
-                    <li class="tab"><a href="#contact" data-toggle="tab">CONTACTO</a></li>
-                    <li class="tab"><a href="#cv" data-toggle="tab">DESCARGA MI CV</a></li>
-                </ul>
-            </nav>
+        <nav class="navbar">
+            <div class="navbar-left pull-left pacifico logo">
+                <!--<img src="assets/img/logo.png" width="60" alt="">-->ES
+            </div>
+            <ul class="nav nav-pills noto navbar-right hidden-xs">
+                <li class="tab active"><a href="#about-me" data-toggle="tab">SOBRE MI</a></li>
+                <li class="tab"><a href="#portfolio" data-toggle="tab">PORTAFOLIO</a></li>
+                <li class="tab"><a href="#contact" data-toggle="tab">CONTACTO</a></li>
+                <li class="tab"><a href="#cv" data-toggle="tab">DESCARGA MI CV</a></li>
+            </ul>
+            <ul class="nav nav-pills noto pull-right visible-xs">
+                <li class="tab active"><a href="#about-me" data-toggle="tab"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+                <li class="tab"><a href="#portfolio" data-toggle="tab"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span></a></li>
+                <li class="tab"><a href="#contact" data-toggle="tab"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+                <li class="tab"><a href="#cv" data-toggle="tab"><span class="glyphicon glyphicon-file" aria-hidden="true"></span></a></li>
+            </ul>
+        </nav>
     </header>
     <main class="tab-content">
         <section id="about-me" class="tab-pane active">
             <div class="container">
-                <div class="page-header">
-                    <h1 class="pacifico">Sobre mi</h1>
-                </div>
                 <div class="row noto">
-                  <div class="col-sm-6">
-
+                    <div class="col-sm-12">
+                        <h1 class="pacifico">Sobre mi</h1>
+                    </div>
+                    <div id="perfil" class="col-sm-6">
+                        <p>Egresada de Laboratoria Perú, muy interesada en desempeñarme como UI developer y a un corto plazo convertirme en Front-End developer. </p>
                         <img src="assets/img/esilva.jpg" alt="">
-
-                        <p>Egresada de Laboratoria Perú, muy interesada en desempeñarme como UI designer y a un corto plazo convertirme en Front-End developer. </p>
                         <p> Me apasiona trabajar en la mejora de interfaces de usuario de aplicaciones informáticas.</p>
+                        <p>Cuento con 6 años de experiencia en el área de sistemas así mismo en estos últimos 6 meses me he enfocado en adquirir nuevos conocimientos y habilidades para el desarrollo de aplicativos web.</p>
+                    </div>
+                    <div id="skill" class="col-sm-6">
+                        <p class="noto">skills</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
 
-
-
-                      <br><p>Cuento con 6 años de experiencia en el área de sistemas así mismo en estos últimos 6 meses me he enfocado en adquirir nuevos conocimientos y habilidades para el desarrollo de aplicativos web.</p>
-
-                  </div>
-                  <div class="col-sm-6">
-                    <p class="noto">skills</p>
-                  </div>
-
-
+                    </div>
                 </div>
             </div>
         </section>
@@ -65,20 +68,28 @@
             proyectos
         </section>
         <section id="contact" class="tab-pane">
-            message
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="pacifico">Contacto</h1>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="es_ES" data-type="vertical" data-theme="light" data-vanity="eliana-silva-castillo"><a class="LI-simple-link" href='https://pe.linkedin.com/in/eliana-silva-castillo?trk=profile-badge' target="_blank">Eliana Silva Castillo</a></div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <p>© Eliana Silva</p>
+            <p>© Eliana Silva 2017</p>
         </div>
     </footer>
     <a class="scrolltop" href="#" style="display: block;"><i class="glyphicon glyphicon-chevron-up"></i></a>
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
     <script src="js/app.js"></script>
 
 

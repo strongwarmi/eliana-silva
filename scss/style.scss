@@ -1,8 +1,9 @@
 $white: #ffffff;
-$primary-color:#fb875e;
-body{
-  font-size: 16px;
+$primary-color: #fb875e;
+body {
+    font-size: 16px;
 }
+
 .fresca {
     font-family: 'Fresca', sans-serif;
 }
@@ -50,15 +51,15 @@ body{
         padding-top: 20px;
         text-align: right;
         h1 {
-            font-size: 6.5rem;
+            font-size: 6rem;
         }
     }
     .btn-conoceme {
         background-color: $primary-color;
         color: $white;
-        font-size: 3rem;
-        border-radius: 50px;
-        padding: 15px 50px;
+        font-size: 20px;
+        /*border-radius: 50px;*/
+        padding: 10px 30px;
         margin-top: 12%;
         transition: all .2s ease-in-out;
     }
@@ -78,10 +79,10 @@ body{
 }
 
 header {
-    /*box-shadow: 0 1px 1px 0 rgba(140, 140, 140, .15);*/
+    box-shadow: 0 1px 1px 0 rgba(140, 140, 140, .15);
     border-top: 3px solid $primary-color;
-    nav {
-        margin: 20px;
+    .navbar {
+        margin: 6px 20px 0 20px;
         .logo {
             font-size: 25px;
         }
@@ -90,5 +91,29 @@ header {
     .nav-pills>li.active>a:focus,
     .nav-pills>li.active>a:hover {
         background-color: #5ed2fb !important;
+    }
+}
+
+#about-me {
+    text-align: justify;
+    #perfil {
+        img {
+            border-radius: 50%;
+            margin: 3px 15px;
+            height: 200px;
+            float: left;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    #about-me {
+        text-align: center;
+        #perfil {
+            img {
+                float: none;
+            }
+        }
     }
 }
