@@ -1,6 +1,9 @@
 body {
   font-size: 16px; }
 
+a {
+  color: #6f6f6f; }
+
 .fresca {
   font-family: 'Fresca', sans-serif; }
 
@@ -37,14 +40,14 @@ body {
   background-attachment: fixed; }
   #hero .bg-black {
     background-color: rgba(0, 0, 0, 0.2);
-    height: 650px;
+    height: 800px;
     color: #fff;
     padding-top: 20px;
     text-align: right; }
     #hero .bg-black h1 {
       font-size: 6rem; }
   #hero .btn-conoceme {
-    background-color: #fb875e;
+    background-color: #ff6863;
     color: #ffffff;
     font-size: 20px;
     /*border-radius: 50px;*/
@@ -53,7 +56,7 @@ body {
     transition: all .2s ease-in-out; }
   #hero .btn-conoceme:hover {
     background-color: #ffffff;
-    color: #fb875e; }
+    color: #ff6863; }
 
 @media (max-width: 767px) {
   #hero .bg-black {
@@ -61,7 +64,8 @@ body {
     text-align: center; } }
 header {
   box-shadow: 0 1px 1px 0 rgba(140, 140, 140, 0.15);
-  border-top: 3px solid #fb875e; }
+  border-top: 3px solid #ffffff;
+  background-color: #ffffff; }
   header .navbar {
     margin: 6px 20px 0 20px; }
     header .navbar .logo {
@@ -69,7 +73,7 @@ header {
   header .nav-pills > li.active > a,
   header .nav-pills > li.active > a:focus,
   header .nav-pills > li.active > a:hover {
-    background-color: #5ed2fb !important; }
+    background-color: #ff6863 !important; }
 
 #about-me {
   text-align: justify; }
@@ -78,11 +82,34 @@ header {
     margin: 3px 15px;
     height: 200px;
     float: left; }
+  #about-me #skills {
+    margin-top: 70px; }
+    #about-me #skills .container-fluid {
+      margin-top: 40px; }
 
 @media (max-width: 768px) {
   #about-me {
     text-align: center; }
     #about-me #perfil img {
-      float: none; } }
+      float: none; }
+    #about-me #skills {
+      margin-top: 0; } }
+@media (max-width: 767px) {
+  #about-me #skills,
+  #about-me #intereses {
+    background-color: #f2f2f2;
+    padding: 1px 0 20px 0; } }
+#footer {
+  background-color: #f7f7f7;
+  border-top: 1px solid rgba(76, 71, 71, 0.15);
+  padding: 10px; }
+  #footer small {
+    float: right; }
+
+@media (max-width: 425px) {
+  #footer small, #footer iframe {
+    display: flex;
+    justify-content: center;
+    float: none; } }
 
 /*# sourceMappingURL=style.css.map */

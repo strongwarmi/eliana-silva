@@ -1,9 +1,12 @@
 $white: #ffffff;
-$primary-color: #fb875e;
+$primary-color: #ff6863;
+$secondary-color: #f2f2f2;
 body {
     font-size: 16px;
 }
-
+a{
+  color: #6f6f6f;
+}
 .fresca {
     font-family: 'Fresca', sans-serif;
 }
@@ -46,7 +49,7 @@ body {
     background-attachment: fixed;
     .bg-black {
         background-color: rgba(0, 0, 0, 0.20);
-        height: 650px;
+        height: 800px;
         color: #fff;
         padding-top: 20px;
         text-align: right;
@@ -80,7 +83,8 @@ body {
 
 header {
     box-shadow: 0 1px 1px 0 rgba(140, 140, 140, .15);
-    border-top: 3px solid $primary-color;
+    border-top: 3px solid $white;
+    background-color: $white;
     .navbar {
         margin: 6px 20px 0 20px;
         .logo {
@@ -90,7 +94,7 @@ header {
     .nav-pills>li.active>a,
     .nav-pills>li.active>a:focus,
     .nav-pills>li.active>a:hover {
-        background-color: #5ed2fb !important;
+        background-color: $primary-color !important;
     }
 }
 
@@ -103,7 +107,12 @@ header {
             height: 200px;
             float: left;
         }
-
+    }
+    #skills{
+      margin-top: 70px;
+      .container-fluid{
+        margin-top: 40px;
+      }
     }
 }
 
@@ -115,5 +124,34 @@ header {
                 float: none;
             }
         }
+        #skills{
+          margin-top: 0;
+        }
     }
+}
+@media (max-width: 767px) {
+    #about-me {
+        #skills,
+        #intereses{
+          background-color: $secondary-color;
+          padding: 1px 0 20px 0;
+        }
+    }
+}
+#footer{
+  background-color: #f7f7f7;
+  border-top: 1px solid rgba(76, 71, 71, 0.15);
+  padding: 10px;
+  small{
+    float: right;
+  }
+}
+@media (max-width: 425px) {
+  #footer{
+    small,iframe{
+      display: flex;
+      justify-content: center;
+      float: none;
+    }
+  }
 }
