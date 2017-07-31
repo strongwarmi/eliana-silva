@@ -4,14 +4,34 @@ body {
 a {
   color: #6f6f6f; }
 
-.fresca {
-  font-family: 'Fresca', sans-serif; }
+p {
+  line-height: 1.5;
+  font-size: 1.5rem; }
+
+h1, h2, h3, h4 {
+  margin-bottom: 20px; }
 
 .pacifico {
   font-family: 'Pacifico', cursive; }
 
 .noto {
   font-family: 'Noto Sans', sans-serif; }
+
+.titulo {
+  font-size: -webkit-xxx-large; }
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 36px; } }
+.section {
+  padding-top: 4rem;
+  padding-bottom: 2rem; }
+
+@media (max-width: 425px) {
+  .section {
+    padding: 0; } }
+.icono {
+  margin-bottom: 2.5rem; }
 
 .scrolltop {
   display: none;
@@ -63,13 +83,18 @@ a {
     height: 575px;
     text-align: center; } }
 header {
-  box-shadow: 0 1px 1px 0 rgba(140, 140, 140, 0.15);
-  border-top: 3px solid #ffffff;
-  background-color: #ffffff; }
+  box-shadow: 0 1px 1px 0 rgba(140, 140, 140, 0.31);
+  border-top: 3px solid #F7F7F7;
+  background-color: #fafbfc; }
   header .navbar {
     margin: 6px 20px 0 20px; }
     header .navbar .logo {
       font-size: 25px; }
+  header .navbar-default {
+    border-color: transparent;
+    background-color: #fafbfc; }
+  header .nav > li > a {
+    padding: 10px !important; }
   header .nav-pills > li.active > a,
   header .nav-pills > li.active > a:focus,
   header .nav-pills > li.active > a:hover {
@@ -77,6 +102,8 @@ header {
 
 #about-me {
   text-align: justify; }
+  #about-me .container {
+    border-radius: 10px; }
   #about-me #perfil img {
     border-radius: 50%;
     margin: 3px 15px;
@@ -93,12 +120,29 @@ header {
     #about-me #perfil img {
       float: none; }
     #about-me #skills {
-      margin-top: 0; } }
+      margin-top: 0; }
+
+  #portfolio, #contact {
+    text-align: center; } }
 @media (max-width: 767px) {
   #about-me #skills,
   #about-me #intereses {
     background-color: #f2f2f2;
     padding: 1px 0 20px 0; } }
+#portfolio .btn-primary {
+  color: #ff6863;
+  background-color: #f8f8f8;
+  border-color: transparent; }
+
+#contact {
+  background-image: url(../assets/img/contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30% 30%;
+  background-attachment: fixed; }
+  #contact .container {
+    background-color: rgba(255, 255, 255, 0.64); }
+
 #footer {
   background-color: #f7f7f7;
   border-top: 1px solid rgba(76, 71, 71, 0.15);
