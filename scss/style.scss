@@ -30,17 +30,18 @@ h1,h2,h3,h4{
   }
 }
 .section{
-  padding-top: 4rem;
+  padding-top: 6rem;
   padding-bottom: 2rem;
 
 }
-@media (max-width:425px){
+/*@media (max-width:425px){
   .section{
     padding:0;
   }
-}
+}*/
 .icono{
   margin-bottom: 2.5rem;
+  font-weight: bold;
 }
 .scrolltop {
     display: none;
@@ -175,6 +176,12 @@ header {
     }
 }
 #portfolio{
+    background-color: #ccc;
+    /*transform: skew(0deg, -2deg);*/
+    .container{
+            
+    /*transform: skew(0deg, 2deg);*/
+    }
   .btn-primary{
     color: #ff6863;
     background-color: #f8f8f8;
@@ -187,10 +194,25 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30% 30%;
-  background-attachment: fixed;
+  background-attachment: fixed;  
+  /*transform: skew(0deg, 2deg);*/
   .container{
         background-color: rgba(255, 255, 255, 0.64);
+      /*transform: skew(0deg, -2deg);*/
   }
+    .btn-agenda {
+        background-color: $primary-color;
+        color: $white;
+        font-size: 20px;
+        /*border-radius: 50px;*/
+        padding: 10px 30px;
+        
+        transition: all .2s ease-in-out;
+    }
+    .btn-agenda:hover {
+        background-color: $white;
+        color: $primary-color;
+    }    
 }
 #footer{
   background-color: #f7f7f7;
